@@ -13,7 +13,7 @@ function App() {
   const getPopulation = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:3000/api/getPopulation"
+        `https://pgpc-web-service-a86q.vercel.app/api/getPopulation`
       );
 
       if (data.status === 200) {
